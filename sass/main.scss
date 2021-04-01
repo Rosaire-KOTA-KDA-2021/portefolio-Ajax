@@ -1,0 +1,14 @@
+@import "vendor/mdb/mdb.free.scss";
+// @import "vendor/bootstrap-scss/bootstrap.scss";
+@import "abstract/variable.scss";
+@import "base/typography.scss";
+@import "layout/grid.scss";
+@import "component/card.scss";
+@import "component/boutton.scss";
+@import "component/text.scss";
+@import "component/navbar.scss";
+@import "component/banner.scss";
+
+body {
+	font-family: $montserra-font;
+}

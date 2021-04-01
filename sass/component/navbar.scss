@@ -1,0 +1,55 @@
+.navbar {
+	@extend .navbar;
+	text-align: center;
+	background-color: $bg-color-blue-facebook;
+	// text-transform: uppercase;
+}
+.navbar__brand {
+	@extend .navbar-brand;
+}
+.navbar__toggler {
+	@extend .navbar-toggler;
+}
+.navbar--lg {
+	@extend .navbar-expand-lg;
+}
+.navbar--light {
+	@extend .navbar-light;
+}
+.collapse {
+	@extend .collapse;
+}
+.navbar--collapse {
+	@extend .navbar-collapse;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 2rem;
+}
+.navbar__nav {
+	@extend .navbar-nav;
+	.nav__item {
+		@extend .nav-item;
+		.nav__link {
+			@extend .nav-link;
+			color: aliceblue;
+			&:hover,
+			&:focus {
+				background-color: rgba(0, 255, 255, 0.58);
+				transition: 1s linear;
+				border-radius: 0.2rem;
+			}
+		}
+
+		.nav--active {
+			@extend .active;
+		}
+	}
+	.nav--dropdown {
+		@extend .dropdown;
+		.dropdown--toggle {
+			@extend .dropdown-toggle;
+		}
+	}
+}

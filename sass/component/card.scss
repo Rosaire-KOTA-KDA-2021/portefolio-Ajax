@@ -1,0 +1,19 @@
+.card {
+	text-align: center;
+	@extend .card;
+}
+.card__title {
+	@extend .card-title;
+}
+.card__body {
+	@extend .card-body;
+}
+.card__text {
+	@extend .card-text;
+}
+.card__header {
+	@extend .card-header;
+}
+.card__footer {
+	@extend .card-footer;
+}

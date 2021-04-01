@@ -1,0 +1,12 @@
+{
+  "name": "portefolio",
+  "version": "1.0.0",
+  "description": "Ce projet permet d'avaluer notre niveau Front-end dans le cadre de notre formation en developpement web",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"sass sass/main.scss css/style.css --watch"
+  },
+  "author": "rosaire kota",
+  "license": "MIT"
+}

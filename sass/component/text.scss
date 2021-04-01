@@ -1,0 +1,25 @@
+.text {
+	@extend .text;
+}
+.text__primary {
+	@extend .text-primary;
+}
+.text__secondary {
+	@extend .text-secondary;
+}
+.text__success {
+	@extend .text-success;
+}
+.text__danger {
+	@extend .text-danger;
+}
+.text__info {
+	@extend .text-info;
+}
+.text__dark {
+	@extend .text-dark;
+}
+
+.text__muted {
+	@extend .text-muted;
+}
