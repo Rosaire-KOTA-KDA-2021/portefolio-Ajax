@@ -1,14 +1,15 @@
-@import "vendor/mdb/mdb.free.scss";
+@import "vendor/mdb/mdb.free";
 // @import "vendor/bootstrap-scss/bootstrap.scss";
-@import "abstract/variable.scss";
-@import "base/typography.scss";
-@import "layout/grid.scss";
-@import "component/card.scss";
-@import "component/boutton.scss";
-@import "component/text.scss";
-@import "component/navbar.scss";
-@import "component/banner.scss";
-
-body {
-	font-family: $montserra-font;
-}
+@import "abstract/variable";
+@import "base/typography";
+@import "base/reset";
+@import "layout/grid";
+@import "component/card";
+@import "component/boutton";
+@import "component/text";
+@import "pages/about";
+@import "pages/works";
+@import "pages/skills";
+@import "pages/contact";
+@import "component/navbar";
+@import "component/banner";

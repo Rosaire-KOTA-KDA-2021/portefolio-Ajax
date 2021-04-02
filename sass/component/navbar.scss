@@ -1,55 +1,66 @@
 .navbar {
-	@extend .navbar;
-	text-align: center;
-	background-color: $bg-color-blue-facebook;
-	// text-transform: uppercase;
+  @extend .navbar;
+  text-align: center;
+  background-color: $bg-light;
+  // text-transform: uppercase;
+  //background-color: $color-default-text;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    $color-default-text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .navbar__brand {
-	@extend .navbar-brand;
+  @extend .navbar-brand;
 }
 .navbar__toggler {
-	@extend .navbar-toggler;
+  @extend .navbar-toggler;
 }
 .navbar--lg {
-	@extend .navbar-expand-lg;
+  @extend .navbar-expand-lg;
 }
 .navbar--light {
-	@extend .navbar-light;
+  @extend .navbar-light;
 }
 .collapse {
-	@extend .collapse;
+  @extend .collapse;
 }
 .navbar--collapse {
-	@extend .navbar-collapse;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	margin-right: 2rem;
+  @extend .navbar-collapse;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
 }
 .navbar__nav {
-	@extend .navbar-nav;
-	.nav__item {
-		@extend .nav-item;
-		.nav__link {
-			@extend .nav-link;
-			color: aliceblue;
-			&:hover,
-			&:focus {
-				background-color: rgba(0, 255, 255, 0.58);
-				transition: 1s linear;
-				border-radius: 0.2rem;
-			}
-		}
+  @extend .navbar-nav;
+  .nav__item {
+    @extend .nav-item;
+    .nav__link {
+      @extend .nav-link;
+      // color: aliceblue;
+      color: $bg-white-dark;
+      opacity: 0.8;
+      font-weight: 500;
+      &:hover,
+      &:focus {
+        color: $bg-light;
+        transition: 0.4s linear;
+        border-radius: 0.2rem;
+        opacity: 1;
+      }
+    }
 
-		.nav--active {
-			@extend .active;
-		}
-	}
-	.nav--dropdown {
-		@extend .dropdown;
-		.dropdown--toggle {
-			@extend .dropdown-toggle;
-		}
-	}
+    .nav--active {
+      @extend .active;
+    }
+  }
+  .nav--dropdown {
+    @extend .dropdown;
+    .dropdown--toggle {
+      @extend .dropdown-toggle;
+    }
+  }
 }

@@ -1,13 +1,62 @@
 .banner {
-	// background-image: url("../images/bg/bg-4.jpg");
-	// background-size: cover;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("../images/bg/bg-4.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 80vh;
-	text-align: center;
-	color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    $color-default-text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom-right-radius: 95%;
+  height: 80vh;
+  text-align: center;
+  color: $bg-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  // &__image {
+
+  // }
+  .banner__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner__title h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $bg-white-dark;
+    opacity: 0.7;
+    // color: $bg-light;
+  }
+  .banner__title h2 {
+    font-weight: 900;
+    color: $bg-light;
+    font-style: italic;
+    opacity: 0.9;
+  }
+
+  .banner__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+
+.social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-network--white div > a > i:hover {
+  color: $bg-light;
+}
+.fab {
+  font-size: 2rem;
+  margin: 1rem;
+  color: $bg-white-dark;
+  opacity: 0.7;
 }
