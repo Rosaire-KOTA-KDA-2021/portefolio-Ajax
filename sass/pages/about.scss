@@ -1,30 +1,35 @@
-.title-section {
-  font-weight: 700;
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  span {
-    display: block;
-    border-bottom: 0.5rem solid $bg-color-blue-facebook;
-  }
-}
 .about-me {
-  .about-me__content {
-    text-align: justify;
-    padding-right: 4rem;
-  }
-  .about-me__image {
-    .image-profile {
-      width: 100%;
-      height: 350px;
-      //   border-radius: 1rem;
+  &__title {
+    @include apply-style-section-title($color-default-text);
+    span {
+      color: #4869ee;
+      border: 0;
+      display: inline;
     }
   }
-}
-@media screen and(max-width:600px) {
-  .about-me__content {
-    padding-right: 0;
-    text-align: center;
+  &__content {
+    text-align: justify;
+  }
+  &__image {
+    width: 280px;
+    margin: 0 3rem;
+
+    @media screen and (min-width: 600px) {
+      position: relative;
+      top: -4rem;
+    }
+    @media screen and (max-width: 580px) {
+      position: relative;
+      right: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-profile {
+      width: 100%;
+      height: 200px;
+      @include apply-bg-linear-gradient-pro;
+      @include apply-inner-box-shodow;
+      border-radius: 100%;
+    }
   }
 }

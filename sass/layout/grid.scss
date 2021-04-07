@@ -1,3 +1,22 @@
 .container--fluid {
-	@extend .container-fluid;
+  @extend .container-fluid;
+}
+.cols {
+  @extend .row;
+  @for $i from 1 through 12 {
+    &--#{$i} {
+      @extend .col-md-#{$i};
+      @extend .col-lg-#{$i};
+    }
+  }
+  &--auto {
+    @extend .col-auto;
+    margin-top: 1rem;
+  }
+  @for $i from 1 through 6 {
+    .offset--#{$i} {
+      @extend .offset-md-#{$i};
+      @extend .offset-lg-#{$i};
+    }
+  }
 }

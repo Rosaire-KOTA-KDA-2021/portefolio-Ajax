@@ -1,6 +1,44 @@
 .skills {
-  padding-top: 4rem;
+  // height: 120vh;
+  background-color: $color-default-text;
+  &__title {
+    @include apply-style-section-title($bg-light);
+  }
   &__contents {
     padding-bottom: 4rem;
+    .card {
+      background-color: #f7fafb;
+
+      @extend .shadow-2;
+      @extend .mb-3;
+      transition: 0.4s linear ease;
+    }
+    .card:hover {
+      transition: 0.4s linear ease;
+    }
+  }
+  &__frontend {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-self: center;
+
+    transition: 0.5s linear;
+    height: 30vh;
+    filter: grayscale(100%);
+  }
+  &__frontend :hover,
+  &__frontend :visited {
+    cursor: pointer;
+    transition: 0.5s linear;
+  }
+  &__frontend div > img {
+    @include apply-width-of-skills-images;
+  }
+
+  &__others,
+  &__backend,
+  &__linux-hosting {
+    @extend .skills__frontend;
   }
 }

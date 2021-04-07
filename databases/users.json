@@ -1,0 +1,34 @@
+{
+ "developper":{
+     "id":1,
+    "firstname":"Rosaire",
+    "lastname":"Kota",
+    "nickname":"rkota",
+    "brief":"Salut! je suis ",
+    "profile":"Développeur Full Stack",
+    "avatar":"./images/bg/rosa-bon.png",
+    "about":[
+        " Ma passion c'est de partager mes liens, astuces et bonnes pratiques dans le <strong>développement web</strong>. <br> Convaincu d’avoir une bonne culture dans ce domaine , je parle <strong>JAVA, JAVASCRIPT, PHP, &nbsp; et PYTHON.</strong> Je suis enthousiasme, créatif et innovant et je suis évidemment disponible de  participer à un projet innovant de votre part.",
+        " Avez-vous une question, une suggestion ? N’hésitez pas à me contacter !Si vous souhaitez travailler avec moi, vous pouvez également me contacter."
+    ],
+    "works":[
+        {
+            "title":"Formulaire d'inscription",
+            "subtitle":"html et CSS",
+            "description":"Ce jolie formulaire permet a permis de mettre en pratique les connaissances theoriques en HTML et CSS, dans le cadre de notre formation a KDA."
+        },
+        {
+            "title":" Kinshasa Digital",
+            "subtitle":"html et CSS",
+            "description":" Ceci est une immitation du site web de Kinshasa Digital  : Le Coachning de la Kinshasa Digital Academy nous a permis sa mise en oeuvre."
+        },
+        {
+            "title":"  Formulaire de Contact",
+            "subtitle":"html, CSS et JS",
+            "description":" Ce Formulaire permet d'ajouter plusieurs contact dans la liste avec leurs photo. Les photos sont dynamiquement uploader avec Vanilla JavaScript."
+        }
+    ]
+   
+ }
+
+}

@@ -14,7 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                 <button class="navbar__toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+                    <img src="https://img.icons8.com/nolan/64/menu.png" />
                 </button>
 
                 <!-- Collapsible wrapper -->
@@ -68,60 +71,137 @@
     </header>
     <main>
         <section class="banner container--fluid">
-            <div class="banner__body ">
-                <div class="banner__title">
-                    <h1>Salut! Je suis Rosaire Kota(rkota)</h1>
-                    <h2>Développeur Full Stack</h2>
+            <div class="particle-js" id="banner--add-particles-js">
+
+            </div>
+            <div class="banner__body">
+                <div class="banner__title" id="bannerTitle">
+
                 </div>
                 <!-- <div class="banner__image">
 
                 </div> -->
-                <div class="social-network social-network--white">
+                <div class="social-box">
                     <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a></div>
                     <div><a href="https://twitter.com/rosaire_kota"><i class="fab fa-twitter-square"></i></a></div>
                     <div><a href="https://m.facebook.com/rosaire.kota.9"><i class="fab fa-facebook"></i></a></div>
                 </div>
 
-            </div>
-            <div class="banner__skills">
-                <div><i class="fab fa-html5"></i></div>
-                <div><i class="fab fa-css3"></i></div>
-                <div><i class="fab fa-js"></i></div>
-                <div><i class="fab fa-symfony"></i></div>
-                <div><i class="fab fa-php"></i></div>
-                <div><i class="fab fa-laravel"></i></div>
-            </div>
+
+                <div class="banner__skills">
+                    <div><i class="fab fa-html5"></i></div>
+                    <div><i class="fab fa-css3"></i></div>
+                    <div><i class="fab fa-js"></i></div>
+                    <div><i class="fab fa-symfony"></i></div>
+                    <div><i class="fab fa-php"></i></div>
+                    <div><i class="fab fa-laravel"></i></div>
+                </div>
             </div>
         </section>
-        <section class="about-me container">
-            <h2 class="about-me__title title-section">a propos de moi</h2> <span></span>
-            <div class="about-me__body">
-                <div class="row">
-                    <div class=" about-me__content col-sm-12 col-md-8 col-lg-8">
-                        <p>
-                            Ma passion c'est de partager mes liens, astuces et bonnes
-                            pratiques dans le <strong>développement web</strong>. <br> <br>
-                            Convaincu d’avoir une bonne culture dans ce domaine , je parle <strong>JAVA, JAVASCRIPT,
-                                PHP, &nbsp;
-                                et PYTHON.</strong>
-                            Je suis enthousiasme, créatif et innovant et je suis évidemment disponible de
-                            participer à un projet innovant de votre part.
+        <section class="about-me container-fluid">
+            <h2 class="about-me__title"><span>a propos</span> de moi</h2>
+            <div class="about-me__body cols">
+                <div class="about-me__image card cols--4">
+                    <div class="card__body">
 
-                        </p>
-                        <p>
-                            Avez-vous une question, une suggestion ? N’hésitez pas à me contacter !
-                            Si vous souhaitez travailler avec moi, vous pouvez également me contacter.
-                        </p>
+                        <div class="card__image" id="aboutMeImage">
+
+                        </div>
+
+                        <div class="social-box  box--default">
+                            <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div><a href="https://twitter.com/rosaire_kota"><i class="fab fa-twitter-square"></i></a>
+                            </div>
+                            <div><a href="https://m.facebook.com/rosaire.kota.9"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="about-me__image col-sm-12 col-md-4 col-lg-4 card">
-                        <div class="card__body">
-                            <img src="/images/bg/rkota.jpg" alt="image-profile" class="card__image image-profile">
-                            <div class="social-network">
-                                <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a></div>
-                                <div><a href="https://twitter.com/rosaire_kota"><i
-                                            class="fab fa-twitter-square"></i></a>
+                </div>
+
+                <div class="about-me__content cols--8" id="aboutMeContent">
+                
+                </div>
+            </div>
+        </section>
+        <section class="skills container--fluid">
+            <h2 class="skills__title">mes Competences</h2>
+            <div class="container">
+                <div class="skills__contents cols">
+                    <div class="cols--6">
+                        <div class="card border border__primary ">
+                            <h5 class="card__header">Front-End</h5>
+                            <div class="skills__frontend card__body text-primary">
+                                <div><img src="images/skills/HTML-5.svg" alt="HTML-5.svg"></div>
+                                <div><img src="images/skills/js.png" alt="js.png">
                                 </div>
-                                <div><a href="https://m.facebook.com/rosaire.kota.9"><i class="fab fa-facebook"></i></a>
+                                <div><img src="images/skills/Vector.svg" alt="Vector.svg"></div>
+                                <div><img src="images/skills/css.svg" alt="css.svg"></div>
+                                <div><img src="images/skills/bootstrap.svg" alt="bootstrap.svg">
+                                </div>
+                                <div><img src="images/skills/json.png" alt="json.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols--6">
+                        <div class="card border border__secondary">
+                            <h5 class="card__header">Back-end</h5>
+                            <div class="card__body text__secondary">
+                                <div class="skills__backend card__body text__primary">
+                                    <div><img src="images/skills/php-MySQL.svg" alt="php-MySQL.svg">
+                                    </div>
+                                    <div><img src="images/skills/python.svg" alt="python.svg"></div>
+                                    <div><img src="images/skills/CMS-wordpress.svg" alt="CMS-wordpress.svg">
+                                    </div>
+                                    <div><img src="images/skills/symfony-icon.svg" alt="symfony-icon.svg"></div>
+                                    <div><img src="images/skills/java.svg" alt="java.svg">
+                                    </div>
+                                    <div><img src="images/skills/composer.svg" alt="composer.svg">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols--6">
+                        <div class="card border border__success">
+                            <h5 class="card__header">Linux et Hosting</h5>
+                            <div class="card__body text__success">
+                                <div class="skills__linux-hosting card__body text__primary">
+                                    <div><img src="images/skills/cpanel.svg" alt="cpanel.svg"></div>
+                                    <div><img src="images/skills/ubuntu.png" alt="ubuntu.png">
+                                    </div>
+                                    <div><img src="images/skills/dns.png" alt="dns.png"></div>
+                                    <div><img src="images/skills/security-ssl.png" alt="security-ssl.png"></div>
+                                    <div><img src="images/skills/apache.svg" alt="apache.svg">
+                                    </div>
+                                    <div><img src="images/skills/ssh.png" alt="ssh.png">
+                                    </div>
+                                    <div><img src="images/skills/horde.svg" alt="horde.svg">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols--6">
+                        <div class="card border border__danger ">
+                            <h5 class="card__header">Outils</h5>
+                            <div class="card__body text__danger">
+                                <div class="skills__others card__body text__primary">
+                                    <div><img src="images/skills/trello2.svg" alt="visual-studio.svg"></div>
+                                    <div><img src="images/skills/git.svg" alt="git.svg">
+                                    </div>
+                                    <div><img src="images/skills/zoom2.svg" alt="github.png"></div>
+                                    <div><img src="images/skills/slack.svg" alt="" width="50"></div>
+                                    <div><img src="images/skills/discord.svg" alt="">
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -129,104 +209,236 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section class="works container mb-5">
             <h2 class="works__title title-section">mes realisations</h2> <span></span>
             <div class="works__content">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg" class="card-img-top"
-                            alt="..." />
-                        <div class="card__body">
-                            <h5 class="card__title">Card title</h5>
-                            <p class="card__text">
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </p>
+                <!--Grid row-->
+                <div class="cols">
+
+                    <!--Grid column-->
+                    <div class="cols--4 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="card__image">
+                                <img src="images/works/register-form.png" class="card_image--top" alt="">
+                                <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card__body">
+                                <!--Title-->
+                                <h4 class="card__title">Formulaire D'inscription</h4>
+                                <h6 class="card__title lead">HTML5 ET CSS</h6>
+                                <!--Text-->
+                                <p class="card__text">Ce jolie formulaire permet a permis de mettre en
+                                    pratique les connaissances theoriques en HTML et CSS,
+                                    dans le cadre de notre formation a KDA.</p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
                         </div>
-                        <div class="card__footer">
-                            <small class="text__muted">Last updated 3 mins ago</small>
-                        </div>
+                        <!--/.Card-->
+
                     </div>
-                    <div class="card">
-                        <img src="https://mdbootstrap.com/img/new/standard/city/042.jpg" class="card-img-top"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                This card has supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="cols--4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="card__image">
+                                <img src="./images/works/kd-website.png" class="card_image--top" alt="" height="190">
+                                <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card__body">
+                                <!--Title-->
+                                <h4 class="card__title">Kinshasa Digital</h4>
+                                <h6 class="card__title lead">HTML5 ET CSS</h6>
+                                <!--Text-->
+                                <p class="card-text">Ceci est une immitation du site web de <strong><a
+                                            href="https://kinshasadigital.com">Kinshasa Digital </a></strong>&nbsp;:
+                                    Le Coachning de la <strong><a href="https://kinshasadigital.academy">Kinshasa
+                                            Digital Academy</a></strong> nous a permis sa mise en oeuvre.
+                                </p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
                         </div>
-                        <div class="card-footer">
-                            <small class="text__muted">Last updated 3 mins ago</small>
-                        </div>
+                        <!--/.Card-->
+
                     </div>
-                    <div class="card">
-                        <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg" class="card-img-top"
-                            alt="..." />
-                        <div class="card__body">
-                            <h5 class="card__title">Card title</h5>
-                            <p class="card__text">
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show
-                                that equal height action.
-                            </p>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="cols--4 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="./images/works/contact-form.png" class="card_image--top" alt="" height="190">
+                                <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Formulaire de Contact</h4>
+                                <h6 class="card__title lead">HTML5, CSS ET JS</h6>
+                                <!--Text-->
+                                <p class="card-text">Ce Formulaire permet d'ajouter plusieurs contact dans la liste avec
+                                    leurs photo. Les photos
+                                    sont dynamiquement uploader avec <strong>Vanilla JavaScript</strong>.</p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
                         </div>
-                        <div class="card__footer">
-                            <small class="text__muted">Last updated 3 mins ago</small>
-                        </div>
+                        <!--/.Card-->
+
                     </div>
+                    <!--Grid column-->
+
                 </div>
+                <!--Grid row-->
+
+            </div>
+            </div>
+
+
+        </section>
+
+
+
+        <section class="contact container--fluid">
+            <div class="container">
+                <h2 class="contact__title">contact</h2> <span></span>
+                <div class="cols">
+                    <div class="contact__form cols--7">
+
+                        <form class="card text-center border border-light p-5" action="#!">
+                            <!-- Name -->
+                            <div class="cols">
+                                <div class="cols--6">
+                                    <input type="text" id="full-name" class="form-control mb-4" placeholder="Noms :">
+                                </div>
+                                <div class="cols--6">
+                                    <!-- Email -->
+                                    <input type="email" id="email" class="form-control mb-4" placeholder="E-mail:">
+                                </div>
+                            </div>
+
+                            <input type="text" id="subject" class="form-control mb-4" placeholder="Sujet:">
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <textarea class="form-control rounded-0" id="message" rows="3"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="cols--auto">
+                                <button type="submit" class="btn btn__primary btn--hover">Envoyer</button>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    <div class="cols--4 offset--1">
+                        <address class="contact__info">
+                            <div>
+
+                                <p> <strong> <i class="fas fa-map-marker-alt"></i></strong> 66 Banana,
+                                    Kintambo/Kinshasa,
+                                    RDC.</p>
+                            </div>
+                            <div>
+
+                                <p><strong> <i class="fas fa-mobile-alt"></i></strong> +243 81-46-46-286 </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <strong><i class="fas fa-envelope-open-text"></i></strong> rosairekota@gmail.com
+                                </p>
+                            </div>
+                        </address>
+
+                        <div class="cols">
+                            <div class="social-box  box--default">
+                                <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a></div>
+                                <div><a href="https://twitter.com/rosaire_kota"><i
+                                            class="fab fa-twitter-square"></i></a>
+                                </div>
+                                <div><a href="https://m.facebook.com/rosaire.kota.9"><i class="fab fa-facebook"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
             </div>
 
         </section>
-        <section class="skills container ">
-            <h2 class="works__title title-section">mes Competences</h2> <span></span>
-            <div class="skills__contents row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="card border border-primary shadow-0 mb-3">
-                        <h5 class="card__header">Front-End</h5>
-                        <div class="card__body text-primary">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card border border-secondary shadow-0 mb-3">
-                        <h5 class="card__header">Back-end</h5>
-                        <div class="card__body text-secondary">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card border border-success shadow-0 mb-3">
-                        <h5 class="card__header">Linux et Hosting</h5>
-                        <div class="card__body text-success">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card border border-danger shadow-0 mb-3">
-                        <h5 class="card__header">Outils</h5>
-                        <div class="card__body text-danger">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
-    <footer>
-        <section class="contact">
-            <h2 class="works__title title-section">contact</h2> <span></span>
-        </section>
+
+    <footer class="footer container--fluid">
+        <!-- Left links -->
+        <div class="cols">
+            <div class="cols--12">
+                <ul class="footer__nav">
+                    <li class="nav__item">
+                        <a class="nav__link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">A propos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Competences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Projets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="cols--12">
+                <div class="footer__copy-right">
+                    <span>Copyright &copy; Rsaire Kota (rkota) &middot;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </span>
+                </div>
+            </div>
+
+        </div>
     </footer>
-    <script src="js/app.js"></script>
-    <!---
-    <script src="./sass/vendor/mdb/js/jquery.js"></script>
-    <script src="./sass/vendor/mdb/js/app.js"></script>-->
+
+
+    <script src="./node_modules/particules/particles.min.js"></script>
+    <script src="./js/user.js"></script>
 
 </body>
 

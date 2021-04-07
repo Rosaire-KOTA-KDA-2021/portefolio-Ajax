@@ -1,0 +1,50 @@
+@mixin get-bg-default-color($color) {
+  background-color: $color;
+}
+@mixin apply-bg-linear-gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.061)),
+    $color-default-text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@mixin apply-bg-linear-gradient-pro {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    $color-default-text;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 90%;
+}
+
+@mixin apply-style-section-title($color) {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: $color;
+  text-transform: uppercase;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  span {
+    display: block;
+    border-bottom: 0.5rem solid $bg-color-blue-facebook;
+  }
+}
+@mixin apply-flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@mixin apply-width-of-skills-images {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+}
+@mixin apply-inner-box-shodow {
+  box-shadow: 0 0 20px -5px #f7fafb;
+  border-radius: 100%;
+}

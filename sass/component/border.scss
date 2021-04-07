@@ -1,0 +1,21 @@
+.border {
+  @extend .border;
+  &--top-left-radius {
+    border-top-left-radius: 95%;
+  }
+  &--bottom-right-radius {
+    border-bottom-right-radius: 95%;
+  }
+}
+.border__danger {
+  @extend .border-danger;
+}
+.border__primary {
+  @extend .border-primary;
+}
+.border__secondary {
+  @extend .border-secondary;
+}
+.border__success {
+  @extend .border-success;
+}

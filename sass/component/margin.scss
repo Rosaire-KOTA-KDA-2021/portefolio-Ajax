@@ -1,0 +1,16 @@
+// .margin__bottom {
+//   @extend .mb;
+//   @for $i from 1 through 5 {
+//     &--#{$i} {
+//       @extend .mb-#{$i};
+//     }
+//   }
+// }
+.margin__top {
+  @extend .mt;
+  @for $i from 1 through 5 {
+    &--#{$i} {
+      @extend .mt-#{$i};
+    }
+  }
+}

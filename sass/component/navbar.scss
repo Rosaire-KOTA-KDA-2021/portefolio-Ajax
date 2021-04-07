@@ -1,15 +1,7 @@
 .navbar {
   @extend .navbar;
   text-align: center;
-  background-color: $bg-light;
-  // text-transform: uppercase;
-  //background-color: $color-default-text;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    $color-default-text;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  @include get-bg-default-color($color-default-text);
 }
 .navbar__brand {
   @extend .navbar-brand;

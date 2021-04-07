@@ -1,0 +1,20 @@
+.footer {
+  height: 20vh;
+  color: $color-default-text;
+  &__nav {
+    @include apply-flex-row-center();
+  }
+
+  &__nav li {
+    margin-top: 2rem;
+  }
+  &__nav li a {
+    padding: 1rem;
+  }
+  &__copy-right {
+    @include apply-flex-row-center();
+    font-style: italic;
+    margin-top: 2rem;
+    font-size: 1rem/2;
+  }
+}

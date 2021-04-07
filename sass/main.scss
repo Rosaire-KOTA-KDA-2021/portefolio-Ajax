@@ -1,15 +1,23 @@
 @import "vendor/mdb/mdb.free";
+
 // @import "vendor/bootstrap-scss/bootstrap.scss";
 @import "abstract/variable";
+@import "abstract/mixins";
 @import "base/typography";
 @import "base/reset";
 @import "layout/grid";
 @import "component/card";
+@import "component/border";
 @import "component/boutton";
 @import "component/text";
 @import "pages/about";
 @import "pages/works";
 @import "pages/skills";
 @import "pages/contact";
+@import "pages/footer";
 @import "component/navbar";
 @import "component/banner";
+@import "component/slider";
+@import "component/margin";
+@import "component/particules";
+

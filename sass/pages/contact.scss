@@ -1,3 +1,11 @@
 .contact {
   height: 80vh;
+  @include apply-bg-linear-gradient;
+  i,
+  p {
+    color: $bg-light;
+  }
+  &__title {
+    @include apply-style-section-title($bg-light);
+  }
 }

@@ -1,19 +1,23 @@
 .card {
-	text-align: center;
-	@extend .card;
+  text-align: center;
+  @extend .card;
 }
 .card__title {
-	@extend .card-title;
+  @extend .card-title;
 }
 .card__body {
-	@extend .card-body;
+  @extend .card-body;
 }
 .card__text {
-	@extend .card-text;
+  @extend .card-text;
 }
 .card__header {
-	@extend .card-header;
+  @extend .card-header;
 }
 .card__footer {
-	@extend .card-footer;
+  @extend .card-footer;
+}
+.card_image--top {
+  @extend .card-img-top;
+  opacity: 0.9;
 }

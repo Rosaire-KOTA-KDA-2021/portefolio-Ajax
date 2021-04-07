@@ -1,10 +1,6 @@
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    $color-default-text;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  cursor: pointer;
+  @include get-bg-default-color($color-default-text);
   border-bottom-right-radius: 95%;
   height: 80vh;
   text-align: center;
@@ -15,48 +11,93 @@
   // &__image {
 
   // }
-  .banner__body {
+  &__body,
+  &__title,
+  &__skills {
+    position: absolute;
+    top: 25%;
+    width: 98%;
+  }
+  &__body {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .banner__title h1 {
+  &__title {
+    position: relative;
+    top: 25%;
+  }
+
+  &__title h1 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: $bg-white-dark;
     opacity: 0.7;
     // color: $bg-light;
   }
-  .banner__title h2 {
+
+  &__title h2 {
     font-weight: 900;
     color: $bg-light;
-    font-style: italic;
+    font-size: 28px;
     opacity: 0.9;
   }
-
-  .banner__skills {
+  &__title h1:hover,
+  &__title h2:hover {
+    transition: 0.3s linear;
+    opacity: 1;
+  }
+  &__skills {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     align-content: flex-end;
     text-align: center;
     opacity: 0.5;
+    position: relative;
+    bottom: -60px;
   }
 }
+.particle-js {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  top: -10%;
+}
 
-.social-network {
+.social-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.social-network--white div > a > i:hover {
-  color: $bg-light;
-}
-.fab {
+
+.fab,
+.fa,
+.fas {
   font-size: 2rem;
   margin: 1rem;
   color: $bg-white-dark;
   opacity: 0.7;
+}
+.fa,
+.fas {
+  color: $color-default-text;
+}
+
+.fab:hover,
+.fa:hover,
+.fas:hover {
+  opacity: 1;
+  // box-shadow: 0 35px 55px #3232321a, 0 15px 25px #0000001a;
+
+  @include apply-inner-box-shodow;
+  transition: 0.3s linear;
+}
+@each $color in $social-box-colors {
+  .#{nth($color,1)} div > a > i {
+    color: nth($color, 2);
+    opacity: 1;
+  }
 }

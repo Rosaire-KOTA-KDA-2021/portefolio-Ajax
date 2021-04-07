@@ -1,18 +1,25 @@
 .btn {
-	@extend .btn;
+  @extend .btn;
+  &--hover:hover {
+    @include get-bg-default-color($bg-light);
+    color: $color-default-text;
+    border: 1px solid $color-default-text;
+  }
 }
 .btn__primary {
-	@extend .btn-primary;
+  @extend .btn-primary;
+  background-color: $color-default-text;
 }
+
 .btn__secondary {
-	@extend .btn-secondary;
+  @extend .btn-secondary;
 }
 .btn__success {
-	@extend .btn-success;
+  @extend .btn-success;
 }
 .btn__danger {
-	@extend .btn-danger;
+  @extend .btn-danger;
 }
 .btn__info {
-	@extend .btn-info;
+  @extend .btn-info;
 }
