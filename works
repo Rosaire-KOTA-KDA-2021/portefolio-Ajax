@@ -1,0 +1,95 @@
+
+                    <!--Grid column-->
+                    <div class="cols--4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="card__image">
+                                <img src="images/works/register-form.png" class="card_image--top" alt="">
+
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card__body">
+                                <!--Title-->
+                                <h4 class="card__title">Formulaire D'inscription</h4>
+                                <h6 class="card__sub-title">HTML5 ET CSS</h6>
+                                <!--Text-->
+                                <p class="card__text">Ce jolie formulaire permet a permis de mettre en
+                                    pratique les connaissances theoriques en HTML et CSS,
+                                    dans le cadre de notre formation a KDA.</p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="cols--4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="card__image">
+                                <img src="./images/works/kd-website.png" class="card_image--top" alt="" height="190">
+                                <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card__body">
+                                <!--Title-->
+                                <h4 class="card__title">Kinshasa Digital</h4>
+                                <h6 class="card__sub-title">HTML5 ET CSS</h6>
+                                <!--Text-->
+                                <p class="card__text">Ceci est une immitation du site web de <strong><a
+                                            href="https://kinshasadigital.com">Kinshasa Digital </a></strong>&nbsp;:
+                                    Le Coachning de la <strong><a href="https://kinshasadigital.academy">Kinshasa
+                                            Digital Academy</a></strong> nous a permis sa mise en oeuvre.
+                                </p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="cols--4 mb-4">
+
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <img src="./images/works/contact-form.png" class="card_image--top" alt="" height="190">
+                                <a href="#">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Formulaire de Contact</h4>
+                                <h6 class="card__title lead">HTML5, CSS ET JS</h6>
+                                <!--Text-->
+                                <p class="card-text">Ce Formulaire permet d'ajouter plusieurs contact dans la liste avec
+                                    leurs photo. Les photos
+                                    sont dynamiquement uploader avec <strong>Vanilla JavaScript</strong>.</p>
+                                <a href="#!" class="btn btn__primary">Visualiser</a>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                    </div>

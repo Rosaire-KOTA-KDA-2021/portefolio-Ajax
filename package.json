@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:compile": "sass sass/main.scss css/style.css --watch",
-    "json-server":"json-server ./databases/users.json --watch"
+    "json-server":"json-server ./databases/developper.json --watch"
     
   },
   "author": "rosaire kota",

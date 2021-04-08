@@ -8,7 +8,11 @@
 }
 .btn__primary {
   @extend .btn-primary;
-  background-color: $color-default-text;
+  background-color: #4869ee;
+  &:hover {
+    transition: 0.3s linear;
+    background-color: #6379d3;
+  }
 }
 
 .btn__secondary {

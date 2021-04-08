@@ -5,6 +5,9 @@
 .card__title {
   @extend .card-title;
 }
+.card__sub-title {
+  @extend .lead;
+}
 .card__body {
   @extend .card-body;
 }

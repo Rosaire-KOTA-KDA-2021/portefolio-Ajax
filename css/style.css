@@ -447,7 +447,7 @@ progress {
   display: none !important;
 }
 
-.lead {
+.lead, .card__sub-title {
   font-size: 1.25rem;
   font-weight: 300;
 }
@@ -16546,7 +16546,11 @@ body {
 }
 
 .btn__primary {
-  background-color: #191c42;
+  background-color: #4869ee;
+}
+.btn__primary:hover {
+  transition: 0.3s linear;
+  background-color: #6379d3;
 }
 
 .about-me__title {
@@ -16617,11 +16621,6 @@ body {
 }
 .works__content > .row > div > img, .works__content > .cols > div > img {
   width: 300px;
-}
-.works .cols:hover {
-  background-color: #191c42;
-  transition: 0.3s linear;
-  padding-top: 1rem;
 }
 
 .skills {
