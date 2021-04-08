@@ -16724,6 +16724,13 @@ body {
   background-color: #191c42;
 }
 
+.navbar__toggler {
+  cursor: pointer;
+}
+.navbar__toggler .navbar__toggler--visible {
+  display: block !important;
+}
+
 .navbar--collapse {
   display: flex;
   flex-direction: row;
@@ -16841,6 +16848,11 @@ body {
 .box--default div > a > i {
   color: #191c42;
   opacity: 1;
+}
+
+.banner__body--faddown {
+  position: absolute;
+  top: 175%;
 }
 
 /*# sourceMappingURL=style.css.map */

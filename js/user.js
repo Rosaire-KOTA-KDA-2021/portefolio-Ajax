@@ -1,5 +1,5 @@
-let worksList = [];
-let skillsList = [];
+let bannerSection = document.querySelector("banner");
+
 let bannerTitlesContainer = document.querySelector("#bannerTitle");
 let aboutMeImageContainer = document.querySelector("#aboutMeImage");
 let aboutMeContentContainer = document.querySelector("#aboutMeContent");
@@ -266,19 +266,46 @@ class Developper {
       htmlElement.npmImageDiv.appendChild(htmlElement.npmImage);
 
       for (let work of this.datas.works) {
-        
-        htmlElement.cardImage.src = work.image;
-        htmlElement.cardTitle.textContent = work.title;
-        htmlElement.cardSubTitle.textContent = work.subtitle;
-        htmlElement.cardText.textContent = work.description;
-        htmlElement.cardImageContainer.appendChild(htmlElement.cardImage);
-        htmlElement.cardBody.appendChild(htmlElement.cardTitle);
-        htmlElement.cardBody.appendChild(htmlElement.cardSubTitle);
-        htmlElement.cardBody.appendChild(htmlElement.cardText);
-        htmlElement.cardContainer.appendChild(htmlElement.cardImageContainer);
-        htmlElement.cardContainer.appendChild(htmlElement.cardBody);
-        htmlElement.cardContainer.appendChild(htmlElement.btnWork);
-        htmlElement.gridColumn.appendChild(htmlElement.cardContainer);
+        let gridColumn = document.createElement("div");
+        let cardContainer = document.createElement("div");
+        let cardBody = document.createElement("div");
+        let cardImageContainer = document.createElement("div");
+        let cardImage = document.createElement("img");
+        let cardTitle = document.createElement("h4");
+        let cardSubTitle = document.createElement("h6");
+        let cardText = document.createElement("p");
+        let btnWork = document.createElement("a");
+        btnWork.setAttribute("href", "#");
+
+        gridColumn.classList.add("cols--4");
+        cardContainer.classList.add("card");
+        cardImageContainer.classList.add("card__image");
+        cardImage.classList.add("card_image--top");
+        cardImage.setAttribute("src", "");
+        cardImage.setAttribute("alt", "");
+        cardBody.classList.add("card__body");
+        cardTitle.classList.add("card__title");
+        cardSubTitle.classList.add("card__title");
+        cardSubTitle.classList.add("card__sub-title");
+        cardText.classList.add("card__text");
+        btnWork.classList.add("btn");
+        btnWork.classList.add("btn__primary");
+        btnWork.textContent = "visualiser";
+        cardImage.src = work.image;
+        cardTitle.textContent = work.title;
+        cardSubTitle.textContent = work.subtitle;
+        cardText.textContent = work.description;
+        cardImageContainer.appendChild(cardImage);
+        cardBody.appendChild(cardTitle);
+        cardBody.appendChild(cardSubTitle);
+        cardBody.appendChild(cardText);
+        cardBody.appendChild(btnWork);
+        cardContainer.appendChild(cardImageContainer);
+        cardContainer.appendChild(cardBody);
+
+        gridColumn.appendChild(cardContainer);
+        worksColumns.appendChild(gridColumn);
+        console.log(gridColumn);
       }
       // worksColumns.appendChild(cards);
 
@@ -331,7 +358,6 @@ class Developper {
       skillsOthersContainer.appendChild(htmlElement.npmImageDiv);
 
       // Works
-      worksColumns.appendChild(htmlElement.gridColumn);
     });
   }
 }
@@ -355,3 +381,22 @@ document.addEventListener("DOMContentLoaded", getJsonDatas);
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load("banner--add-particles-js", "databases/particles.json");
+
+let toggleCheckbox = document.querySelector("#toggle");
+let navbarSupportedContent = document.querySelector("#navbarSupportedContent");
+
+function visibleMenuToggle() {
+  if (toggleCheckbox.checked == true) {
+    navbarSupportedContent.style.display = "block";
+    navbarSupportedContent.style.backgroundColor = "#ffff";
+    navbarSupportedContent.style.color = "#0000";
+
+    bannerTitlesContainer.classList.toggle("banner__body--faddown");
+  } else {
+    navbarSupportedContent.style.display = "none";
+    bannerTitlesContainer.classList.remove("banner__body--faddown");
+    navbarSupportedContent.style.backgroundColor = "#000";
+  }
+}
+
+toggle.addEventListener("click", visibleMenuToggle);

@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="css/style.css">
 
 
+
 </head>
 
 <body>
     <header class="header">
+
         <!-- Navbar -->
         <nav class="navbar navbar--lg">
             <!-- Container wrapper -->
@@ -30,11 +32,10 @@
                 <a class="navbar__brand" href="#">Logo</a>
 
                 <!-- Toggle button -->
-                <button class="navbar__toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <img src="https://img.icons8.com/nolan/64/menu.png" />
-                </button>
+                <input class="navbar__toggler" type="checkbox" id="toggle" hidden>
+                <label for="toggle" class="navbar__toggler"><img
+                        src="https://img.icons8.com/nolan/64/menu.png" /></label>
+
 
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar--collapse" id="navbarSupportedContent">
@@ -304,11 +305,30 @@
             </div>
 
         </div>
+        <div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-mdb-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
     <script src="./node_modules/particules/particles.min.js"></script>
     <script src="./js/user.js"></script>
+
 
 </body>
 

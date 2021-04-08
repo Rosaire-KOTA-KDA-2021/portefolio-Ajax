@@ -8,6 +8,10 @@
 }
 .navbar__toggler {
   @extend .navbar-toggler;
+  cursor: pointer;
+  .navbar__toggler--visible {
+    display: block !important;
+  }
 }
 .navbar--lg {
   @extend .navbar-expand-lg;
