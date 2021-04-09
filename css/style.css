@@ -16554,11 +16554,9 @@ body {
   background-color: #6379d3;
 }
 
-@media screen and (max-width: 680) {
-  .btn--download {
-    margin-left: 20%;
-    margin-top: 2rem;
-  }
+.btn--download {
+  margin-left: 20%;
+  margin-bottom: 2rem;
 }
 
 .about-me__title {
@@ -16582,21 +16580,51 @@ body {
 .about-me__content {
   text-align: justify;
 }
+@media screen and (width: 375px) {
+  .about-me__content {
+    padding: 0 2rem;
+  }
+}
+@media screen and (width: 411px) {
+  .about-me__content {
+    padding: 0 2rem;
+  }
+}
+@media screen and (width: 768px) {
+  .about-me__content {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .about-me__content .btn--download {
+    margin-left: 16.3rem;
+  }
+}
 .about-me__image {
   width: 280px;
   margin: 0 3rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (width: 411px) {
   .about-me__image {
     position: relative;
-    top: -4rem;
+    top: -2rem;
+    left: 1rem;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (width: 375px) {
+  .about-me__image {
+    position: relative;
+    top: -2rem;
+    left: 0.2rem;
+  }
+}
+@media screen and (width: 768px) {
   .about-me__image {
     position: relative;
     right: 1.5rem;
     margin-bottom: 1rem;
+    left: 8rem;
+    width: 50%;
+    height: 100%;
   }
 }
 .about-me__image .image-profile {
