@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", getJsonDatas);
 
 // peremet de recuperer le donnees en Ajax:
 function getJsonDatas() {
-  fetch(" http://localhost:3000/developper")
+  fetch(" https://my-json-server.typicode.com/developper")
     .then(function (response) {
       return response.json();
     })
