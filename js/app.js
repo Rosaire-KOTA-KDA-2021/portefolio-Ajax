@@ -402,7 +402,7 @@ class Developper {
 //  Utilitaires:
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-// particlesJS.load("banner--add-particles-js", "databases/particles.json");
+particlesJS.load("banner--add-particles-js", "../databases/particles.json");
 
 toggle.addEventListener("click", visibleMenuToggle);
 
