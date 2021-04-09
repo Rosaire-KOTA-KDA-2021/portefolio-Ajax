@@ -1,8 +1,10 @@
 a {
   text-decoration: none;
+  color: $bg-white-dark;
 }
 a:hover {
-  color: $bg-color-blue-facebook;
+  transition: 00.3s linear;
+  color: $bg-white-dark;
 }
 li {
   list-style: none;
@@ -13,8 +15,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-a {
+p {
   color: $color-default-text;
 }
 body {

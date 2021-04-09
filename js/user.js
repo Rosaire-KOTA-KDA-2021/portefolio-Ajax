@@ -208,6 +208,8 @@ class Developper {
       htmlElement.avatar.src = this.datas.avatar;
       htmlElement.aboutMeFirstLine.innerHTML = this.datas.about[0];
       htmlElement.aboutMeSecondLine.textContent = this.datas.about[1];
+      htmlElement.btnWork.textContent = "Télécharger le CV";
+      htmlElement.btnWork.classList.add("btn--download");
 
       // 2.1. Skills Frontend : Affectation des images dans les elements html
 
@@ -327,6 +329,7 @@ class Developper {
       aboutMeImageContainer.appendChild(htmlElement.avatar);
       aboutMeContentContainer.appendChild(htmlElement.aboutMeFirstLine);
       aboutMeContentContainer.appendChild(htmlElement.aboutMeSecondLine);
+      aboutMeContentContainer.appendChild(htmlElement.btnWork);
 
       // c) Section Competences: Skills
       skillsFrontendContainer.appendChild(htmlElement.html5ImageDiv);
@@ -365,7 +368,7 @@ class Developper {
 // On cree recupere nos donnees a partir du serveur
 
 function getJsonDatas() {
-  fetch(" http://localhost:3000/developpers")
+  fetch(" http://localhost:3000/developper")
     .then(function (response) {
       return response.json();
     })

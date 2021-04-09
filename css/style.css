@@ -16491,10 +16491,12 @@ body {
 
 a {
   text-decoration: none;
+  color: #f7fafb;
 }
 
 a:hover {
-  color: #2a96f3;
+  transition: 0.3s linear;
+  color: #f7fafb;
 }
 
 li {
@@ -16512,8 +16514,7 @@ h5,
 .h5,
 h6,
 .h6,
-p,
-a {
+p {
   color: #191c42;
 }
 
@@ -16551,6 +16552,13 @@ body {
 .btn__primary:hover {
   transition: 0.3s linear;
   background-color: #6379d3;
+}
+
+@media screen and (max-width: 680) {
+  .btn--download {
+    margin-left: 20%;
+    margin-top: 2rem;
+  }
 }
 
 .about-me__title {
