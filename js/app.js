@@ -27,9 +27,8 @@ function getJsonDatas() {
     })
     .then(function (data) {
       // B.2) On creer un developpeur en passant en parametre les donnees Json
-      aboutMeContentContainer
 
-      // new Developper(data);
+      new Developper(data);
     });
 }
 
