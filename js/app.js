@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", getJsonDatas);
 
 // peremet de recuperer le donnees en Ajax:
 function getJsonDatas() {
-  fetch(" http://localhost:3000/developper")
+  fetch(" https://my-json-server.typicode.com/rosaire-kota-kda-2021.github.io/portefolio-Ajax/developper")
     .then(function (response) {
       return response.json();
     })
