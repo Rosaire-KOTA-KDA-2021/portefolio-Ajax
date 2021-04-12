@@ -2,16 +2,16 @@
   @extend .btn;
   &--hover:hover {
     @include get-bg-default-color($bg-light);
-    color: $color-default-text;
-    border: 1px solid $color-default-text;
+    color: $bg-white-dark;
+    
   }
 }
 .btn__primary {
   @extend .btn-primary;
-  background-color: #4869ee;
+  background-color: $btn-primary-color;
   &:hover {
     transition: 0.3s linear;
-    background-color: #6379d3;
+    background-color: $btn-primary-hover-color;
   }
 }
 
@@ -30,5 +30,21 @@
 .btn--download {
   margin-left: 20%;
   margin-bottom: 2rem;
- 
+}
+.btn--scroll {
+  position: fixed;
+  left: 70rem;
+  bottom: 2rem;
+  z-index: 999;
+  @extend .btn__primary;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.btn--scroll-hide{
+  display: none;
 }

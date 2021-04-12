@@ -2861,31 +2861,31 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-primary, .btn__primary {
+.btn-primary, .btn__primary, .btn--scroll {
   color: #fff;
   background-color: #1266f1;
   border-color: #1266f1;
 }
-.btn-primary:hover, .btn__primary:hover {
+.btn-primary:hover, .btn__primary:hover, .btn--scroll:hover {
   color: #fff;
   background-color: #0f57cd;
   border-color: #0e52c1;
 }
-.btn-check:focus + .btn-primary, .btn-check:focus + .btn__primary, .btn-primary:focus, .btn__primary:focus {
+.btn-check:focus + .btn-primary, .btn-check:focus + .btn__primary, .btn-check:focus + .btn--scroll, .btn-primary:focus, .btn__primary:focus, .btn--scroll:focus {
   color: #fff;
   background-color: #0f57cd;
   border-color: #0e52c1;
   box-shadow: 0 0 0 0.25rem rgba(54, 125, 243, 0.5);
 }
-.btn-check:checked + .btn-primary, .btn-check:checked + .btn__primary, .btn-check:active + .btn-primary, .btn-check:active + .btn__primary, .btn-primary:active, .btn__primary:active, .btn-primary.active, .navbar__nav .nav__item .btn-primary.nav--active, .active.btn__primary, .navbar__nav .nav__item .btn__primary.nav--active, .show > .btn-primary.dropdown-toggle, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle, .show > .dropdown-toggle.btn__primary, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle {
+.btn-check:checked + .btn-primary, .btn-check:checked + .btn__primary, .btn-check:checked + .btn--scroll, .btn-check:active + .btn-primary, .btn-check:active + .btn__primary, .btn-check:active + .btn--scroll, .btn-primary:active, .btn__primary:active, .btn--scroll:active, .btn-primary.active, .navbar__nav .nav__item .btn-primary.nav--active, .active.btn__primary, .navbar__nav .nav__item .btn__primary.nav--active, .active.btn--scroll, .navbar__nav .nav__item .btn--scroll.nav--active, .show > .btn-primary.dropdown-toggle, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle, .show > .dropdown-toggle.btn__primary, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle, .show > .dropdown-toggle.btn--scroll, .navbar__nav .nav--dropdown .show > .btn--scroll.dropdown--toggle {
   color: #fff;
   background-color: #0e52c1;
   border-color: #0e4db5;
 }
-.btn-check:checked + .btn-primary:focus, .btn-check:checked + .btn__primary:focus, .btn-check:active + .btn-primary:focus, .btn-check:active + .btn__primary:focus, .btn-primary:active:focus, .btn__primary:active:focus, .btn-primary.active:focus, .navbar__nav .nav__item .btn-primary.nav--active:focus, .active.btn__primary:focus, .navbar__nav .nav__item .btn__primary.nav--active:focus, .show > .btn-primary.dropdown-toggle:focus, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn__primary:focus, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle:focus {
+.btn-check:checked + .btn-primary:focus, .btn-check:checked + .btn__primary:focus, .btn-check:checked + .btn--scroll:focus, .btn-check:active + .btn-primary:focus, .btn-check:active + .btn__primary:focus, .btn-check:active + .btn--scroll:focus, .btn-primary:active:focus, .btn__primary:active:focus, .btn--scroll:active:focus, .btn-primary.active:focus, .navbar__nav .nav__item .btn-primary.nav--active:focus, .active.btn__primary:focus, .navbar__nav .nav__item .btn__primary.nav--active:focus, .active.btn--scroll:focus, .navbar__nav .nav__item .btn--scroll.nav--active:focus, .show > .btn-primary.dropdown-toggle:focus, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn__primary:focus, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn--scroll:focus, .navbar__nav .nav--dropdown .show > .btn--scroll.dropdown--toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(54, 125, 243, 0.5);
 }
-.btn-primary:disabled, .btn__primary:disabled, .btn-primary.disabled, .disabled.btn__primary {
+.btn-primary:disabled, .btn__primary:disabled, .btn--scroll:disabled, .btn-primary.disabled, .disabled.btn__primary, .disabled.btn--scroll {
   color: #fff;
   background-color: #1266f1;
   border-color: #1266f1;
@@ -13807,26 +13807,26 @@ input[type=file].form-control.is-invalid:focus-within ~ .form-file-label .form-f
   padding: 0.25rem 0.875rem 0.1875rem 0.875rem;
 }
 
-.btn-primary, .btn__primary {
+.btn-primary, .btn__primary, .btn--scroll {
   color: #fff;
   background-color: #1266f1;
 }
-.btn-primary:hover, .btn__primary:hover {
+.btn-primary:hover, .btn__primary:hover, .btn--scroll:hover {
   color: #fff;
   background-color: #0c56d0;
 }
-.btn-primary:focus, .btn__primary:focus, .btn-primary.focus, .focus.btn__primary {
+.btn-primary:focus, .btn__primary:focus, .btn--scroll:focus, .btn-primary.focus, .focus.btn__primary, .focus.btn--scroll {
   color: #fff;
   background-color: #0c56d0;
 }
-.btn-check:checked + .btn-primary, .btn-check:checked + .btn__primary, .btn-check:active + .btn-primary, .btn-check:active + .btn__primary, .btn-primary:active, .btn__primary:active, .btn-primary.active, .navbar__nav .nav__item .btn-primary.nav--active, .active.btn__primary, .navbar__nav .nav__item .btn__primary.nav--active, .show > .btn-primary.dropdown-toggle, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle, .show > .dropdown-toggle.btn__primary, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle {
+.btn-check:checked + .btn-primary, .btn-check:checked + .btn__primary, .btn-check:checked + .btn--scroll, .btn-check:active + .btn-primary, .btn-check:active + .btn__primary, .btn-check:active + .btn--scroll, .btn-primary:active, .btn__primary:active, .btn--scroll:active, .btn-primary.active, .navbar__nav .nav__item .btn-primary.nav--active, .active.btn__primary, .navbar__nav .nav__item .btn__primary.nav--active, .active.btn--scroll, .navbar__nav .nav__item .btn--scroll.nav--active, .show > .btn-primary.dropdown-toggle, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle, .show > .dropdown-toggle.btn__primary, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle, .show > .dropdown-toggle.btn--scroll, .navbar__nav .nav--dropdown .show > .btn--scroll.dropdown--toggle {
   color: #fff;
   background-color: #093d94;
 }
-.btn-check:checked + .btn-primary:focus, .btn-check:checked + .btn__primary:focus, .btn-check:active + .btn-primary:focus, .btn-check:active + .btn__primary:focus, .btn-primary:active:focus, .btn__primary:active:focus, .btn-primary.active:focus, .navbar__nav .nav__item .btn-primary.nav--active:focus, .active.btn__primary:focus, .navbar__nav .nav__item .btn__primary.nav--active:focus, .show > .btn-primary.dropdown-toggle:focus, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn__primary:focus, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle:focus {
+.btn-check:checked + .btn-primary:focus, .btn-check:checked + .btn__primary:focus, .btn-check:checked + .btn--scroll:focus, .btn-check:active + .btn-primary:focus, .btn-check:active + .btn__primary:focus, .btn-check:active + .btn--scroll:focus, .btn-primary:active:focus, .btn__primary:active:focus, .btn--scroll:active:focus, .btn-primary.active:focus, .navbar__nav .nav__item .btn-primary.nav--active:focus, .active.btn__primary:focus, .navbar__nav .nav__item .btn__primary.nav--active:focus, .active.btn--scroll:focus, .navbar__nav .nav__item .btn--scroll.nav--active:focus, .show > .btn-primary.dropdown-toggle:focus, .navbar__nav .nav--dropdown .show > .btn-primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn__primary:focus, .navbar__nav .nav--dropdown .show > .btn__primary.dropdown--toggle:focus, .show > .dropdown-toggle.btn--scroll:focus, .navbar__nav .nav--dropdown .show > .btn--scroll.dropdown--toggle:focus {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
-.btn-primary:disabled, .btn__primary:disabled, .btn-primary.disabled, .disabled.btn__primary {
+.btn-primary:disabled, .btn__primary:disabled, .btn--scroll:disabled, .btn-primary.disabled, .disabled.btn__primary, .disabled.btn--scroll {
   color: #fff;
   background-color: #1266f1;
 }
@@ -16542,14 +16542,13 @@ body {
 
 .btn--hover:hover {
   background-color: #fafafa;
-  color: #191c42;
-  border: 1px solid #191c42;
+  color: #f7fafb;
 }
 
-.btn__primary {
+.btn__primary, .btn--scroll {
   background-color: #4869ee;
 }
-.btn__primary:hover {
+.btn__primary:hover, .btn--scroll:hover {
   transition: 0.3s linear;
   background-color: #6379d3;
 }
@@ -16557,6 +16556,24 @@ body {
 .btn--download {
   margin-left: 20%;
   margin-bottom: 2rem;
+}
+
+.btn--scroll {
+  position: fixed;
+  left: 70rem;
+  bottom: 2rem;
+  z-index: 999;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.btn--scroll-hide {
+  display: none;
 }
 
 .about-me__title {
@@ -16602,6 +16619,7 @@ body {
 .about-me__image {
   width: 280px;
   margin: 0 3rem;
+  margin-bottom: 2rem;
 }
 @media screen and (width: 411px) {
   .about-me__image {
@@ -16655,6 +16673,11 @@ body {
   display: block;
   border-bottom: 0.5rem solid #2a96f3;
 }
+@media screen and (max-width: 411px) {
+  .works__content .cols .card {
+    margin: 1rem;
+  }
+}
 .works__content > .row > div > img, .works__content > .cols > div > img {
   width: 300px;
 }
@@ -16704,12 +16727,12 @@ body {
   padding: 2px;
 }
 .contact {
-  height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.061)), #191c42;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-bottom: 2rem;
 }
 .contact i,
 .contact p {
@@ -16728,9 +16751,19 @@ body {
   display: block;
   border-bottom: 0.5rem solid #2a96f3;
 }
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 1rem;
+  }
+  .contact .contact__info {
+    padding: 0;
+    line-height: 0;
+    margin-top: 1em;
+    font-size: 14px;
+  }
+}
 
 .footer {
-  height: 20vh;
   color: #191c42;
 }
 .footer__nav {
@@ -16742,8 +16775,18 @@ body {
 .footer__nav li {
   margin-top: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}
 .footer__nav li a {
   padding: 1rem;
+  color: #191c42 !important;
+}
+.footer__img-scroll-top {
+  width: 50px;
+  object-fit: cover;
 }
 .footer__copy-right {
   display: flex;
@@ -16786,6 +16829,16 @@ body {
   border-radius: 0.2rem;
   opacity: 1;
 }
+.navbar__nav .navbar-toggle--show {
+  display: block !important;
+  background-color: red !important;
+  color: red !important;
+  z-index: 99;
+}
+.navbar__nav .navbar-toggle--hide {
+  display: none;
+}
+
 .banner {
   cursor: pointer;
   background-color: #191c42;

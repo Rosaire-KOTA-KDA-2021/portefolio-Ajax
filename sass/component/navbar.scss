@@ -59,4 +59,13 @@
       @extend .dropdown-toggle;
     }
   }
+  .navbar-toggle--show {
+    display: block !important;
+    background-color: red !important;
+    color: red !important;
+    z-index: 99;
+  }
+  .navbar-toggle--hide {
+    display: none;
+  }
 }

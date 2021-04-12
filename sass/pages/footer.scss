@@ -1,5 +1,4 @@
 .footer {
-  height: 20vh;
   color: $color-default-text;
   &__nav {
     @include apply-flex-row-center();
@@ -8,9 +7,19 @@
   &__nav li {
     margin-top: 2rem;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   &__nav li a {
     padding: 1rem;
+    color: $color-default-text !important;
   }
+
+  &__img-scroll-top {
+    width: 50px;
+    object-fit: cover;
+  }
+
   &__copy-right {
     @include apply-flex-row-center();
     font-style: italic;

@@ -6,6 +6,7 @@
       border: 0;
       display: inline;
     }
+ 
   }
   &__content {
     text-align: justify;
@@ -26,6 +27,7 @@
   &__image {
     width: 280px;
     margin: 0 3rem;
+    margin-bottom: 2rem;
 
     @media screen and (width: 411px) {
       position: relative;

@@ -11,7 +11,8 @@ let skillsLinuxHostingContainer = document.querySelector("#skillsLinuxHosting");
 let skillsOthersContainer = document.querySelector("#skillsOthers");
 let worksColumns = document.querySelector("#worksColumns");
 let toggleCheckbox = document.querySelector("#toggle");
-let navbarSupportedContent = document.querySelector("#navbarSupportedContent");
+let navbarToggle = document.querySelector("#navbarToggle");
+let btnScrollTop = document.querySelector("#btnScrollTop");
 
 /* B)-----------Debut du programme-------------- :*/
 
@@ -21,15 +22,13 @@ document.addEventListener("DOMContentLoaded", getJsonDatas);
 
 // peremet de recuperer le donnees en Ajax:
 function getJsonDatas() {
-  fetch(
-    " https://my-json-server.typicode.com/rosaire-kota-kda-2021/portefolio-Ajax/developper"
-  )
+  fetch(" http://localhost:3000/developper")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       // B.2) On creer un developpeur en passant en parametre les donnees Json
-
+      btnScrollTop.classList.add("btn--scroll-hide");
       new Developper(data);
     });
 }
@@ -409,13 +408,47 @@ toggle.addEventListener("click", visibleMenuToggle);
 
 function visibleMenuToggle() {
   if (toggleCheckbox.checked == true) {
-    navbarSupportedContent.style.display = "block";
-    navbarSupportedContent.style.backgroundColor = "#ffff";
+    navbarToggle.className = "navbar-toggle--show";
 
     bannerTitlesContainer.classList.toggle("banner__body--faddown");
   } else {
-    navbarSupportedContent.style.display = "none";
+    navbarToggle.className = "navbar-toggle--hide";
     bannerTitlesContainer.classList.remove("banner__body--faddown");
   }
 }
+
+// Bouton Scrolling  en haut
+
+btnScrollTop.addEventListener("click", scrollTop);
+function scrollTop(e) {
+  e.preventDefault();
+  window.scroll({
+    top: 0,
+    let: 0,
+    behavior: "smooth",
+  });
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset <= 200) {
+      btnScrollTop.classList.add("btn--scroll-hide");
+      console.log("ok");
+    } else {
+      btnScrollTop.classList.remove("btn--scroll-hide");
+      console.log("ko");
+    }
+  });
+  // window.addEventListener("load", () => {
+  //   btnScrollTop.classList.add("btn--scroll-hide");
+  // });
+  function hideScrollTopButton() {
+    if (window.pageYOffset <= 200) {
+      btnScrollTop.classList.add("btn--scroll-hide");
+      console.log("ok");
+    } else {
+      btnScrollTop.classList.remove("btn--scroll-hide");
+      console.log("ko");
+    }
+  }
+}
+
 // Fin

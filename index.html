@@ -38,7 +38,7 @@
 
 
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar--collapse" id="navbarSupportedContent">
+                <div class="collapse navbar--collapse" id="navbarToggle">
                     <!-- Left links -->
                     <ul class="navbar__nav ml-auto mb-2 mb-lg-0">
                         <li class="nav__item">
@@ -193,43 +193,44 @@
 
         </section>
 
-
-
         <section class="contact container--fluid" id="contact">
             <div class="container">
-                <h2 class="contact__title">contact</h2> <span></span>
+                <h2 class="contact__title">contact</h2>
                 <div class="cols">
-                    <div class="contact__form cols--7">
+                    <div class="cols--6">
 
-                        <form class="card text-center border border-light p-5" action="#!">
-                            <!-- Name -->
-                            <div class="cols">
-                                <div class="cols--6">
-                                    <input type="text" id="full-name" class="form-control mb-4" placeholder="Noms :">
+                        <div class="contact__form">
+                            <form class="card text-center border border-light p-3" action="#!">
+                                <!-- Name -->
+                                <div class="cols">
+                                    <div class="cols--6">
+                                        <input type="text" id="full-name" class="form-control mb-4"
+                                            placeholder="Noms :">
+                                    </div>
+                                    <div class="cols--6">
+                                        <!-- Email -->
+                                        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail:">
+                                    </div>
                                 </div>
-                                <div class="cols--6">
-                                    <!-- Email -->
-                                    <input type="email" id="email" class="form-control mb-4" placeholder="E-mail:">
+
+                                <input type="text" id="subject" class="form-control mb-4" placeholder="Sujet:">
+
+                                <!-- Message -->
+                                <div class="form-group">
+                                    <textarea class="form-control rounded-0" id="message" rows="3"
+                                        placeholder="Message"></textarea>
                                 </div>
-                            </div>
 
-                            <input type="text" id="subject" class="form-control mb-4" placeholder="Sujet:">
+                                <div class="cols--auto">
+                                    <button type="submit" class="btn btn__primary btn--hover">Envoyer</button>
+                                </div>
 
-                            <!-- Message -->
-                            <div class="form-group">
-                                <textarea class="form-control rounded-0" id="message" rows="3"
-                                    placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="cols--auto">
-                                <button type="submit" class="btn btn__primary btn--hover">Envoyer</button>
-                            </div>
-
-                        </form>
+                            </form>
+                        </div>
 
 
                     </div>
-                    <div class="cols--4 offset--1">
+                    <div class="cols--4">
                         <address class="contact__info">
                             <div>
 
@@ -240,7 +241,8 @@
                             <div>
 
                                 <p><strong> <i class="fas fa-mobile-alt"></i></strong> <a
-                                        href="tel:+243 81 46 46 286">+243 81-46-46-286 </a></p>
+                                        href="tel:+243 81 46 46 286">+243
+                                        81-46-46-286 </a></p>
                             </div>
                             <div>
                                 <p>
@@ -251,12 +253,16 @@
                         </address>
 
                         <div class="cols">
-                            <div class="social-box  box--default">
-                                <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a></div>
-                                <div><a href="https://twitter.com/rosaire_kota"><i
-                                            class="fab fa-twitter-square"></i></a>
-                                </div>
-                                <div><a href="https://m.facebook.com/rosaire.kota.9"><i class="fab fa-facebook"></i></a>
+                            <div class="cols--12">
+                                <div class="social-box  box--default">
+                                    <div><a href="https://github.com/rosairekota"><i class="fab fa-github"></i></a>
+                                    </div>
+                                    <div><a href="https://twitter.com/rosaire_kota"><i
+                                                class="fab fa-twitter-square"></i></a>
+                                    </div>
+                                    <div><a href="https://m.facebook.com/rosaire.kota.9"><i
+                                                class="fab fa-facebook"></i></a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -270,6 +276,7 @@
             </div>
 
         </section>
+
     </main>
 
     <footer class="footer container--fluid">
@@ -294,6 +301,8 @@
                     </li>
 
                 </ul>
+                <button id="btnScrollTop" class="btn btn--scroll "> <img src="./images/top.png" alt="back-to-top.png"
+                        class="footer__img-scroll-top"></button>
 
             </div>
             <div class="cols--12">
