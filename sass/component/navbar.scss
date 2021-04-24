@@ -2,6 +2,12 @@
   @extend .navbar;
   text-align: center;
   @include get-bg-default-color($color-default-text);
+  &--fad-down{
+    display: none !important;
+  }
+  &--fad-up{
+    display: block !important;
+  }
 }
 .navbar__brand {
   @extend .navbar-brand;

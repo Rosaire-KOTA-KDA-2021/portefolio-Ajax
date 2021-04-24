@@ -13,6 +13,7 @@ let worksColumns = document.querySelector("#worksColumns");
 let toggleCheckbox = document.querySelector("#toggle");
 let navbarToggle = document.querySelector("#navbarToggle");
 let btnScrollTop = document.querySelector("#btnScrollTop");
+let socialBox = document.querySelector("#socialBox");
 
 /* B)-----------Debut du programme-------------- :*/
 
@@ -91,7 +92,7 @@ class Developper {
   /**
    * Permet de rendre les elements HTML au niveau de la section A COMPETENCES
    */
-  renderSkillsElements(htmlElement) {
+  renderSkillsElements = (htmlElement) => {
     // 2.1. Skills Frontend : Affectation des images dans les elements html
 
     // for (let frontedSkillImage of this.datas.skills.frontend) {
@@ -175,7 +176,7 @@ class Developper {
     skillsOthersContainer.appendChild(htmlElement.gitImageDiv);
     skillsOthersContainer.appendChild(htmlElement.composerImageDiv);
     skillsOthersContainer.appendChild(htmlElement.npmImageDiv);
-  }
+  };
 
   /**
    * Permet de rendre les elements HTML au niveau de la section A COMPETENCES
@@ -408,12 +409,14 @@ toggle.addEventListener("click", visibleMenuToggle);
 
 function visibleMenuToggle() {
   if (toggleCheckbox.checked == true) {
-    navbarToggle.className = "navbar-toggle--show";
+    navbarToggle.classList.add("navbar--fad-up");
 
     bannerTitlesContainer.classList.toggle("banner__body--faddown");
+    socialBox.classList.add("banner__body--faddown");
   } else {
-    navbarToggle.className = "navbar-toggle--hide";
+    navbarToggle.classList.remove("banner__body--faddown");
     bannerTitlesContainer.classList.remove("banner__body--faddown");
+    navbarToggle.classList.remove("navbar--fad-up");
   }
 }
 
@@ -437,9 +440,9 @@ function scrollTop(e) {
       console.log("ko");
     }
   });
-  // window.addEventListener("load", () => {
-  //   btnScrollTop.classList.add("btn--scroll-hide");
-  // });
+  window.addEventListener("load", () => {
+    btnScrollTop.classList.add("btn--scroll-hide");
+  });
   function hideScrollTopButton() {
     if (window.pageYOffset <= 200) {
       btnScrollTop.classList.add("btn--scroll-hide");

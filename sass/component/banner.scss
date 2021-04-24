@@ -104,6 +104,7 @@
 }
 
 .banner__body--faddown {
-  position: absolute;
-  top: 175%;
+  transition: 13s linear !important;
+  opacity: 0 !important;
+  display: none !important;
 }
