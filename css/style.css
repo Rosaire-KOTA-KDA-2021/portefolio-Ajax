@@ -16576,6 +16576,12 @@ body {
   display: none;
 }
 
+.skills--waves {
+  height: 3rem;
+  width: 100% !important;
+  z-index: 999;
+}
+
 .wave1 use {
   -webkit-animation: move-forever1 10s linear infinite;
   animation: move-forever1 10s linear infinite;
@@ -16655,13 +16661,14 @@ body {
   padding-bottom: 3rem;
 }
 .about-me__title span {
-  display: block;
-  border-bottom: 0.5rem solid #2a96f3;
-}
-.about-me__title span {
   color: #4869ee;
   border: 0;
   display: inline;
+}
+.about-me__title span::after {
+  content: "====";
+  display: block;
+  height: 0.2rem;
 }
 .about-me__content {
   text-align: justify;
@@ -16739,20 +16746,42 @@ body {
   padding-bottom: 3rem;
 }
 .works__title span {
+  color: #4869ee;
+  border: 0;
+  display: inline;
+}
+.works__title span::after {
+  content: "====";
   display: block;
-  border-bottom: 0.5rem solid #2a96f3;
+  height: 0.2rem;
+}
+.works__content .cols .card {
+  height: 450px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 500ms;
 }
 @media screen and (max-width: 411px) {
   .works__content .cols .card {
     margin: 1rem;
   }
 }
+.works__content .cols .card:hover {
+  transform: scale(1.03);
+  background-color: rgba(83, 109, 189, 0.603) !important;
+  padding: 0.5rem;
+  color: wheat;
+}
 .works__content > .row > div > img, .works__content > .cols > div > img {
   width: 300px;
 }
 
 .skills {
-  background-color: #191c42;
+  background: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.397)), url("../images/serveur.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .skills__title {
   font-weight: 700;
@@ -16764,8 +16793,14 @@ body {
   padding-bottom: 3rem;
 }
 .skills__title span {
+  color: #4869ee;
+  border: 0;
+  display: inline;
+}
+.skills__title span::after {
+  content: "====";
   display: block;
-  border-bottom: 0.5rem solid #2a96f3;
+  height: 0.2rem;
 }
 .skills__contents {
   padding-bottom: 4rem;
@@ -16817,8 +16852,14 @@ body {
   padding-bottom: 3rem;
 }
 .contact__title span {
+  color: #4869ee;
+  border: 0;
+  display: inline;
+}
+.contact__title span::after {
+  content: "====";
   display: block;
-  border-bottom: 0.5rem solid #2a96f3;
+  height: 0.2rem;
 }
 @media screen and (max-width: 768px) {
   .contact {

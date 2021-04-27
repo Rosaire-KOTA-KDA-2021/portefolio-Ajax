@@ -1,6 +1,6 @@
 .skills {
-  // height: 120vh;
-  background-color: $color-default-text;
+
+  @include bg-skills;
   &__title {
     @include apply-style-section-title($bg-light);
   }

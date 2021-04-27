@@ -1,11 +1,7 @@
 .about-me {
   &__title {
     @include apply-style-section-title($color-default-text);
-    span {
-      color: #4869ee;
-      border: 0;
-      display: inline;
-    }
+   
  
   }
   &__content {

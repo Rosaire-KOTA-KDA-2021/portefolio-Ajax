@@ -1,12 +1,30 @@
 .works {
+  
+   &:hover{
+   
+   }
   &__title {
+
     @include apply-style-section-title($color-default-text);
   }
   &__content .cols .card {
+    height: 450px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 500ms;
     @media screen and (max-width: 411px) {
       margin: 1rem;
     }
   }
+  &__content .cols .card:hover {
+    transform: scale(1.03);
+    background-color: rgba(83, 109, 189, 0.603) !important;
+    padding: 0.5rem;
+    color: wheat;
+    
+  }
+  
+  
   &__content > .row > div > img {
     width: 300px;
   }

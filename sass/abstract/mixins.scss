@@ -1,5 +1,6 @@
 @mixin get-bg-default-color($color) {
   background-color: $color;
+  
 }
 @mixin apply-bg-linear-gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.061)),
@@ -19,7 +20,14 @@
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 90%;
 }
-
+@mixin bg-skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.397)),
+  url('../images/serveur.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
 @mixin apply-style-section-title($color) {
   font-weight: 700;
   font-size: 28px;
@@ -28,10 +36,19 @@
   text-transform: uppercase;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
   span {
-    display: block;
-    border-bottom: 0.5rem solid $bg-color-blue-facebook;
-  }
+      color: #4869ee;
+      border: 0;
+      display: inline;
+    }
+    span::after{
+      content: "====";
+      display: block;
+      height: 0.2rem;
+      
+
+    }
 }
 @mixin apply-flex-row-center {
   display: flex;
