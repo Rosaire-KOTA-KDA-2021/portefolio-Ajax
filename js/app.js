@@ -18,12 +18,17 @@ let socialBox = document.querySelector("#socialBox");
 /* B)-----------Debut du programme-------------- :*/
 
 // B.1). On recupere les  donnees provenant du serveur JSON lors du chargement du DOM
-
+try {
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  particlesJS.load("banner--add-particles-js", "../databases/particles.json");
+} catch (error) {}
 document.addEventListener("DOMContentLoaded", getJsonDatas);
 
 // peremet de recuperer le donnees en Ajax:
 function getJsonDatas() {
-  fetch(" http://localhost:3000/developper")
+  fetch(
+    "https://my-json-server.typicode.com/rosaire-kota-kda-2021/portefolio-Ajax/developper"
+  )
     .then(function (response) {
       return response.json();
     })
@@ -401,9 +406,6 @@ class Developper {
 }
 
 //  Utilitaires:
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load("banner--add-particles-js", "databases/particles.json");
 
 toggle.addEventListener("click", visibleMenuToggle);
 
